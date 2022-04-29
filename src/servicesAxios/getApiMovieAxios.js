@@ -6,7 +6,8 @@ const axiosOptions = {
         "versioncode": 11,
         "clienttype": "ios_jike_default",
         "Host": "ga-mobile-api.loklok.tv",
-        "Sec-Fetch-Site": "cross-site"
+        "Sec-Fetch-Site": "cross-site",
+
     }
 }
 const getDataMovieByPage = async (page) => {
