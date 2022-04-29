@@ -3,22 +3,7 @@ const apiDataService = require('../services/getDataMovieService')
 
 let helloWorld = async (req, res) => {
     try {
-        return res.json({
-            data: [
-                {
-                    "categoryId": 1,
-                    "movieId": 15155,
-                    "name": "Sh**ting Stars",
-                    "mainImage": "https://img.netpop.app/cover/20220419/1650339394862_995ad2131de498328ce6eb23decf89d9流星_15155_竖版.png"
-                },
-                {
-                    "categoryId": 1,
-                    "movieId": 16820,
-                    "name": "Again My Life[Vietsub]",
-                    "mainImage": "https://img.netpop.app/cover/20220426/1650938143054_513b5c84ced6ef9a684940678ef9cba9c0xkumbQcInSXSYjJVIm7SnQ9H5.jpg"
-                },
-            ]
-        })
+        return res.send("Hello world!");
     } catch (error) {
         console.log("Error in getListMovieController: " + error);
     }
