@@ -1,6 +1,14 @@
 const apiDataService = require('../services/getDataMovieService')
 
 
+let helloWorld = async (req, res) => {
+    try {
+        return res.send("Hello world!");
+    } catch (error) {
+        console.log("Error in getListMovieController: " + error);
+    }
+}
+
 let getListMovieController = async (req, res) => {
     try {
         let respond = await apiDataService.getApiHomeDataService(req.query.page);
@@ -53,9 +61,6 @@ let getMovieMediaController = async (req, res) => {
         console.log("Error in getMovieMediaController: " + error);
     }
 }
-
-
-
 let apiSearchWithKeyWordController = async (req, res) => {
     try {
         let respond = await apiDataService.apiSearchWithKeyWordService(
@@ -76,5 +81,6 @@ module.exports = {
     getBannerController: getBannerController,
     getDetailMovieController: getDetailMovieController,
     getMovieMediaController: getMovieMediaController,
-    apiSearchWithKeyWordController: apiSearchWithKeyWordController
+    apiSearchWithKeyWordController: apiSearchWithKeyWordController,
+    helloWorld: helloWorld
 }

@@ -4,7 +4,7 @@ const moreFeatures = require('../controller/handleMoreFeatureController')
 
 let route = (app) => {
 
-    app.get('/', dataControllerMovie.getListMovieController)
+    app.get('/', dataControllerMovie.helloWorld)
 
 
     app.get('/getListMovie', dataControllerMovie.getListMovieController)
