@@ -23,7 +23,6 @@ let route = (app) => {
 
     app.post('/listMovieFavorite', moreFeatures.listMovieFavoriteByUidController)
 
-
 }
 
 

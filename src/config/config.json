@@ -1,11 +1,18 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "movie_app",
-    "host": "127.0.0.1",
-    "dialect": "mysql",
-    "logging": false
+    "username": "vtekkbmioqlams",
+    "password": "0a687d7270174ba2202f22b808027a800ae9efc7a62282c9877f0fb9d5156eab",
+    "database": "d8qqs3cmib3j7o",
+    "host": "ec2-52-5-110-35.compute-1.amazonaws.com",
+    "dialect": "postgres",
+    "logging": false,
+    "timezone": "+07:00",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
   },
   "test": {
     "username": "root",
